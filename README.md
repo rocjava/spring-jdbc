@@ -9,6 +9,6 @@ com.penn.springjdbc.test.TestJDBC
 6.关闭连接  
 
 #####jdbc总结  
-1.prepareStatement会预编译sql，可以有效防止sql注入攻击，其原理也简单，就是会转义其中的特殊字符。
+1.prepareStatement会预编译sql，可以有效防止sql注入攻击，其原理也简单，就是会转义其中的特殊字符，把一个参数位只编译为一个参数，而不是仅仅做参数拼接。
 
 ****
